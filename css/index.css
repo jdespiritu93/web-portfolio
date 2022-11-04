@@ -60,6 +60,26 @@ html, body {
     padding: 1rem;
 }
 
+.projects .proj-section {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.projects .proj-section div {
+    padding: 10px;
+}
+
+.projects .proj-section div .figure img {
+    height: 270px;
+    width: auto;
+    margin-bottom: 25px;
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-caption {
+    background-color: rgba(128, 128, 128, .5)
+}
+
+
 /* Tools section */
 .tools-section {
     background-color: #264653;
@@ -68,17 +88,16 @@ html, body {
     padding: 3rem;
 }
 .tools-section .tools-list {
-    display: flex;
     text-align: center;
     background-color: #fff;
     box-shadow: 5px 7px #001700;
     opacity: 0.9;
     padding: 5rem;
 }
-.tools-list .front-end div img {
+/* .tools-list .front-end div img {
     width: 100px;
     height: 100px;
-}
+} */
 
 /* Contact section */
 .contact-section {
@@ -94,9 +113,41 @@ html, body {
     padding: 1rem;
 }
 
+.contact-section div .message-us div input {
+    border-radius: 0;
+}
+
+.contact-section div .message-us div textarea {
+    border-radius: 0;
+}
+
+.contact-section div .message-us div button {
+    border-radius: 0;
+}
+
 /* Footer section */
 .footer-section {
     background-color: #264653;
     padding: 1rem;
     line-height: 0.7rem;
 }
+
+/* Media query */
+
+@media (max-width: 576px) { 
+    .projects {
+        padding: 3em 0;
+    }
+
+    .projects .sub-head {
+        font-size: 1.2rem;
+    }
+
+    .projects .proj-section div figure figcaption {
+        font-size: 1.2rem;
+    }
+
+    .projects .proj-section div .figure img {
+        height: 300px;
+    }
+ }
